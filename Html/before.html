@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1{
+            font-size: 100px;
+            font-weight: 400;
+            font-family: "Archivo Black" sans-serif;
+            -webkit-text-stroke: 3px rgb(0, 0, 0);
+            color: transparent;
+            position: relative;
+            cursor: pointer;
+        }
+        h1::before{
+            content: "WELCOME";
+            position: absolute;
+            height: 100%;
+            width: 0%;
+            color: black;
+            border-right: 0px solid black;
+            overflow: hidden;
+            transition: width 1.5s;
+
+        }
+        h1:hover::before{
+              width: 100%;
+              border-right: 2px solid black;
+
+        }
+    </style>
+</head>
+<body>
+    <h1>WELCOME</h1>
+</body>
+</html>
